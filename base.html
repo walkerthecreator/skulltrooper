@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skulltrooper Tattoo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-inter overflow-x-hidden">
+
+    <nav class="flex justify-around items-center p-2">
+        <h2 class="font-inter text-xl font-bold">skulltrooper</h2>
+        <ul class="flex w-1/4 justify-around text-sm items-center">
+            <li class="hover:underline cursor-pointer hover:text-indigo-800"><a href="">Home</a></li>
+            <li class="hover:underline cursor-pointer hover:text-indigo-800"><a href="#studio">Studio</a></li>
+            <li class="hover:underline cursor-pointer hover:text-indigo-800"><a href="#gallery">Gallery</a></li>
+        </ul>
+
+        <button class="bg-black rounded-full p-2 px-7 text-white font-semibold"> 
+            <a href="#contact-me">Book Now</a>
+        </button>
+    </nav>
+
+    <!-- section  main -->
+
+
+    <main class="w-screen bg-zinc-500 h-screen" id="main-header">
+        <div class="w-4/5 mx-auto text-center p-10 text-white">
+            <h1 class="text-7xl font-bold pt-40 drop-shadow-lg">Crafting Stories in Ink</h1>
+            <p class="mt-32 text-2xl font-semibold">Embrace Authentic Artistry at our <br> Premium Tattoo Studio</p>
+            <button class="mt-10 p-2 px-4 font-semibold bg-white text-black rounded-full ">Call now +91-86997-11227</button>
+        </div>
+    </main>
+
+    <section id="studio">
+        <div class="w-4/5 mx-auto text-center mt-10">
+            <h1 class="text-6xl font-semibold mt-14">Our Studio</h1>
+            <p class="text-2xl font-semibold my-8">Hello and Welcome to my website! Here, you'll discover everything about design, scheduling appointments, and more directly from me</p>
+        </div>
+
+        <div id="studio-grid" class="mx-auto w-4/5">
+            <div class="border h-[500px] overflow-hidden object-center">
+                <img src="./assets/studio-main.jpg" class="object-cover w-full transition-all" alt="">
+            </div>
+            <div class="flex gap-2 mt-2">
+                <div class="w-3/6">
+                    <img src="./assets/studio-2.jpg" alt="">
+                </div>
+
+                <div class="w-3/6">
+                    <img src="./assets/studio-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="artist" class="py-8">
+        <h1 class="text-6xl text-center font-semibold mt-14">Artist</h1>
+        
+        <div class="w-4/5 mx-auto flex gap-10 mt-10">
+            <div class="rounded-xl w-1/2 overflow-hidden">
+                <img src="./assets/main.jpg" class="w-7/8 h-[700px] object-cover" alt="">    
+            </div>    
+
+            <div class="w-1/2">
+                <h1 class="text-4xl font-bold my-3">Shivam </h1>
+                <p class="text-2xl font-semibold text-gray-400 w-3/4" id="intro">
+                    Meet <span >Shivam</span>, your tattoo artist with <span>3+ years</span> of experience and <span> 50+ masterpieces</span>. Unleash your imagination on the canvas of your skin with a true artist.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="gallery">
+        <h1 class="text-6xl font-semibold text-center mt-10">Gallery</h1>
+        <div class="mt-10 w-4/5 mx-auto grid gap-4 grid-cols-3 grid-rows-6 h-[800px]">
+            <div class="bg-zinc-300 row-span-3 col-span-2 overflow-hidden">  
+                <img src="./assets/grid-1.jpg" class="object-cover h-full w-full" alt="" >    
+            </div>
+
+            <div class="bg-zinc-300 row-span-3 overflow-hidden">      
+                <img src="./assets/grid-2.jpg" class="object-cover h-full w-full" alt="" >    
+            </div>
+            <div class="bg-zinc-300 row-span-2 overflow-hidden">      
+                <img src="./assets/grid-3.jpg" class="object-cover h-full w-full" alt="" >    
+            </div>
+            <div class="bg-zinc-300 row-span-2 overflow-hidden">      
+                <img src="./assets/grid-4.jpg" class="object-cover h-full w-full" alt="" >    
+            </div>
+            <div class="bg-zinc-300 row-span-2 overflow-hidden">      
+                <img src="./assets/studio-3.jpg" class="object-cover h-full w-full" alt="" >    
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10">
+            <h1 class="text-6xl font-semibold text-center ">Contact us</h1>
+
+            <div class="flex w-4/5 mx-auto gap-10 mt-16">
+                <div class="rounded-md">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3431.1147269121507!2d76.68451127558062!3d30.68704798783909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fef0c162915df%3A0xd45ba132218645c5!2sSkulltrooper%20Tattoo%20and%20Sketch!5e0!3m2!1sen!2sin!4v1703582010485!5m2!1sen!2sin" width="700" height="750" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <form class="flex flex-col gap-5 justify-center w-full items-center ">
+                    <input type="text" class="bg-gray-100 p-2 px-4 rounded-lg w-4/5 placeholder:font-semibold placeholder:text-zinc-400" placeholder="Enter Name">
+                    <input type="text" class="bg-gray-100 p-2 px-4 rounded-lg w-4/5 placeholder:font-semibold placeholder:text-zinc-400" placeholder="DD/MM/YYYY">
+                    <textarea type="text" class="bg-gray-100 p-2 px-4 rounded-lg w-4/5 placeholder:font-semibold placeholder:text-zinc-400" rows="10" placeholder="Enter Message"></textarea>
+                    <button class="bg-black rounded-full px-8 p-2 text-white text-lg font-semibold">Book an Appointment</button>
+                </form>
+            </div>
+    </section>
+
+
+    <footer class="bg-zinc-900 h-[400px]">
+
+        <div class="flex p-6 px-10">
+            <div class="w-4/5 text-white flex justify-start gap-10 items-center">
+                <h2 class="font-semibold">Social links : </h2>
+                <a href="" class="flex gap-1 items-center hover:text-pink-300"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg> Instagram</a>
+                <a href="" class="flex gap-1 items-center hover:text-sky-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>twitter</a>
+                <a href="" class="flex gap-1 items-center hover:text-green-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>phone</a>
+                <a href="" class="flex gap-1 items-center hover:text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>linkedin</a>
+            </div>
+            <button class="bg-white rounded-full px-8 p-2  text-lg font-semibold">Book an Appointment</button>
+        </div>
+
+        <h1 class="text-9xl  font-bold text-stone-500 text-center mt-10">skulltrooper</h1>
+
+    </footer>
+
+    
+    <script src="./script.js"></script>
+</body>
+</html>
