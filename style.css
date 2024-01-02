@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@500;600;700;800&display=swap');
+
+#main-header{
+    background-image: url(./assets/main.jpg);
+
+    background-size: cover;
+}
+
+
+html{
+    scroll-behavior: smooth !important;
+}
+
+#gallery img:nth-child(2){
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#gallery img{
+    /* filter: saturate(0); */
+    transition: 0.3s;
+}
+
+#gallery img:hover{
+    filter: saturate(1);
+    transform: scale(1.02) ;
+}
+
+#intro span {
+    color: #555;
+    font-weight: 700;
+}
