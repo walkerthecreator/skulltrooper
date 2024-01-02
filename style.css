@@ -2,7 +2,7 @@
 
 #main-header{
     background-image: url(./assets/main.jpg);
-
+    background-position: top center;
     background-size: cover;
 }
 

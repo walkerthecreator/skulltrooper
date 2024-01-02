@@ -9,9 +9,9 @@
 </head>
 <body class="font-inter overflow-x-hidden">
 
-    <nav class="flex justify-around items-center p-2">
+    <nav class="flex justify-around items-center max-sm:justify-between p-2">
         <h2 class="font-inter text-xl font-bold">skulltrooper</h2>
-        <ul class="flex w-1/4 justify-around text-sm items-center">
+        <ul class="flex w-1/4 justify-around text-sm items-center max-sm:hidden">
             <li class="hover:underline cursor-pointer hover:text-indigo-800"><a href="">Home</a></li>
             <li class="hover:underline cursor-pointer hover:text-indigo-800"><a href="#studio">Studio</a></li>
             <li class="hover:underline cursor-pointer hover:text-indigo-800"><a href="#gallery">Gallery</a></li>
@@ -28,7 +28,7 @@
     <main class="w-screen bg-zinc-500 h-screen" id="main-header">
         <div class="w-4/5 mx-auto text-center p-10 text-white">
             <h1 class="text-7xl font-bold pt-40 drop-shadow-lg">Crafting Stories in Ink</h1>
-            <p class="mt-32 text-2xl font-semibold">Embrace Authentic Artistry at our <br> Premium Tattoo Studio</p>
+            <p class="mt-32 max-sm:mt-10 max-sm:text-lg text-2xl drop-shadow-lg font-semibold">Embrace Authentic Artistry at our <br> Premium Tattoo Studio</p>
             <button class="mt-10 p-2 px-4 font-semibold bg-white text-black rounded-full ">Call now +91-86997-11227</button>
         </div>
     </main>
@@ -40,7 +40,7 @@
         </div>
 
         <div id="studio-grid" class="mx-auto w-4/5">
-            <div class="border h-[500px] overflow-hidden object-center">
+            <div class="border overflow-hidden object-center">
                 <img src="./assets/studio-main.jpg" class="object-cover w-full transition-all" alt="">
             </div>
             <div class="flex gap-2 mt-2">
@@ -58,12 +58,12 @@
     <section id="artist" class="py-8">
         <h1 class="text-6xl text-center font-semibold mt-14">Artist</h1>
         
-        <div class="w-4/5 mx-auto flex gap-10 mt-10">
-            <div class="rounded-xl w-1/2 overflow-hidden">
-                <img src="./assets/main.jpg" class="w-7/8 h-[700px] object-cover" alt="">    
+        <div class="w-4/5 mx-auto flex max-sm:flex-col gap-10 mt-10">
+            <div class="rounded-xl w-1/2 max-sm:w-full  overflow-hidden">
+                <img src="./assets/main.jpg" class="w-7/8 h-[700px] max-sm:h-[300px] object-cover" alt="">    
             </div>    
 
-            <div class="w-1/2">
+            <div class="w-1/2 max-sm:w-full">
                 <h1 class="text-4xl font-bold my-3">Shivam </h1>
                 <p class="text-2xl font-semibold text-gray-400 w-3/4" id="intro">
                     Meet <span >Shivam</span>, your tattoo artist with <span>3+ years</span> of experience and <span> 50+ masterpieces</span>. Unleash your imagination on the canvas of your skin with a true artist.
@@ -98,9 +98,9 @@
     <section class="py-10">
             <h1 class="text-6xl font-semibold text-center ">Contact us</h1>
 
-            <div class="flex w-4/5 mx-auto gap-10 mt-16">
-                <div class="rounded-md">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3431.1147269121507!2d76.68451127558062!3d30.68704798783909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fef0c162915df%3A0xd45ba132218645c5!2sSkulltrooper%20Tattoo%20and%20Sketch!5e0!3m2!1sen!2sin!4v1703582010485!5m2!1sen!2sin" width="700" height="750" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="flex w-4/5 mx-auto gap-10 mt-16 max-sm:flex-col">
+                <div class="rounded-md w-full max-sm:w-full border max-sm:h-[300px] overflow-hidden">
+                    <iframe height="100%" width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3431.1147269121507!2d76.68451127558062!3d30.68704798783909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fef0c162915df%3A0xd45ba132218645c5!2sSkulltrooper%20Tattoo%20and%20Sketch!5e0!3m2!1sen!2sin!4v1703582010485!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <form class="flex flex-col gap-5 justify-center w-full items-center ">
                     <input type="text" class="bg-gray-100 p-2 px-4 rounded-lg w-4/5 placeholder:font-semibold placeholder:text-zinc-400" placeholder="Enter Name">
@@ -112,10 +112,10 @@
     </section>
 
 
-    <footer class="bg-zinc-900 h-[400px]">
+    <footer class="bg-zinc-900 h-fit">
 
-        <div class="flex p-6 px-10">
-            <div class="w-4/5 text-white flex justify-start gap-10 items-center">
+        <div class="flex p-6 px-10 max-sm:items-center">
+            <div class="w-4/5 text-white flex max-sm:flex-col max justify-start gap-10 items-center">
                 <h2 class="font-semibold">Social links : </h2>
                 <a href="" class="flex gap-1 items-center hover:text-pink-300"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg> Instagram</a>
                 <a href="" class="flex gap-1 items-center hover:text-sky-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>twitter</a>
@@ -125,7 +125,7 @@
             <button class="bg-white rounded-full px-8 p-2  text-lg font-semibold">Book an Appointment</button>
         </div>
 
-        <h1 class="text-9xl  font-bold text-stone-500 text-center mt-10">skulltrooper</h1>
+        <h1 class="text-9xl max-sm:text-7xl pb-4  font-bold text-stone-500 text-center mt-10">skulltrooper</h1>
 
     </footer>
 
