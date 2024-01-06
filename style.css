@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@500;600;700;800&display=swap');
 
 #main-header{
-    background-image: url(./assets/main.jpg);
+    background-image: url(./assets/grid-3.jpg);
     background-position: top center;
     background-size: cover;
 }
@@ -33,3 +33,18 @@ html{
     color: #555;
     font-weight: 700;
 }
+
+footer {
+    background-image: url(./leaf.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position-x: 80vw;
+    height: 300px;
+}
+
+@media (max-width : 576px) {
+    footer{
+        background-position-x :60vw ; 
+    }
+}
+
