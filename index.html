@@ -101,7 +101,8 @@
                 </div>
                 <form action="https://formspree.io/f/xleqevzo" method="POST" class="flex flex-col gap-5 justify-center w-full sm:items-center">
                     <input type="text" name="client" class="bg-gray-100 p-2 px-4 rounded-lg sm:w-4/5 placeholder:font-semibold placeholder:text-zinc-400" placeholder="Enter Name">
-                    <input type="date" value="2024-01-01" name="time" class="bg-gray-100 p-2 px-4 rounded-lg w-full sm:w-4/5 placeholder:font-semibold placeholder:text-zinc-400" placeholder="Select a Date">
+                    <input type="number" name="phone" class="bg-gray-100 p-2 px-4 rounded-lg sm:w-4/5 placeholder:font-semibold placeholder:text-zinc-400" placeholder="Enter Phone" required>
+                    <input type="date" id="timeslot" value="" name="time" class="bg-gray-100 p-2 px-4 rounded-lg w-full sm:w-4/5 placeholder:font-semibold placeholder:text-zinc-400" placeholder="Select a Date">
                     <textarea type="text" name="message" class="bg-gray-100 p-2 px-4 rounded-lg sm:w-4/5 placeholder:font-semibold placeholder:text-zinc-400" rows="10" placeholder="Enter Message"></textarea>
                     <button class="bg-black rounded-full px-8 p-2 text-white text-lg font-semibold">Book an Appointment</button>
                 </form>
@@ -128,6 +129,23 @@
     </footer>
 
     
-    <script src="./script.js"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+        extend: {
+        fontFamily : {
+            inter : ['Inter' , 'sans-serif'] ,
+            poppins : ['Poppins' , 'sans-serif']
+        } ,
+        colors: {
+          clifford: '#da373d',
+        } ,
+        
+      }}}
+
+        const elem = document.querySelector('#timeslot')
+        const date = new Date().toISOString().slice(0, 10)
+        elem.value = date 
+    </script>
 </body>
 </html>
