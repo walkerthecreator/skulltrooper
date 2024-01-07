@@ -4,7 +4,11 @@
     background-image: url(./assets/grid-3.jpg);
     background-position: top center;
     background-size: cover;
-    /* filter: brightness(0.99); */
+    transition: transform 0.3s ease-in-out;
+}
+
+#main-header:hover{
+    transform: scale(1.01) ;
 }
 
 
