@@ -4,6 +4,7 @@
     background-image: url(./assets/grid-3.jpg);
     background-position: top center;
     background-size: cover;
+    /* filter: brightness(0.99); */
 }
 
 
@@ -13,6 +14,10 @@ html{
     overflow-x: hidden;
 }
 
+main h1{
+    text-shadow: 0 4px 20px #333;
+}
+
 #gallery img:nth-child(2){
     height: 100%;
     width: 100%;
@@ -20,7 +25,6 @@ html{
 }
 
 #gallery img{
-    /* filter: saturate(0); */
     transition: 0.3s;
 }
 
